@@ -1,0 +1,9 @@
+image_name='beauty_with_freckle.bmp';
+Img=imread(image_name);
+Img2=im2double(Img);
+p=imread(image_name);
+p2=im2double(p);
+r=4;
+sigma=0.1;
+q=guided_filter(Img2,p2,r,sigma*sigma);
+imwrite(q,sprintf('%s%d%s%f%s%s','r_is_',r,'_sigma_is_',sigma,'_',image_name),'bmp');
