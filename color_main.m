@@ -1,4 +1,4 @@
-image_name='beauty_with_freckle.bmp';
+
 Img=imread(image_name);
 p=imread(image_name);
 [m,n,channel_num]=size(Img);
